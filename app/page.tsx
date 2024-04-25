@@ -21,12 +21,10 @@ export default function Home() {
               layout="vertical"
               initialValues={initialValues}
               onFinish={(values) => {
-                  console.log(values)
                   const {salary, hasQuartet, fund, soundEngineerSalary, libraryFee} = values;
                   let remaining = salary - (hasQuartet ? 800000 : 0) - soundEngineerSalary
                   remaining = remaining - (remaining * fund / 100) - (remaining * libraryFee / 100)
                   setEachSalary(remaining / 5);
-                  console.log(salary)
               }}
           >
               <Form.Item label="Орлого" name="salary" required>
