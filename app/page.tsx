@@ -15,7 +15,7 @@ export default function Home() {
     const [form] = Form.useForm();
     const [eachSalary, setEachSalary] = useState(0);
   return (
-      <Card title="Salary calculator" className="w-[500px] mx-auto flex flex-col gap-5 mt-10">
+      <Card title="Salary calculator" className="w-full lg:w-[500px] mx-auto flex flex-col gap-5 mt-10">
           <Form
               form={form}
               layout="vertical"
